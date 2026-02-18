@@ -1,0 +1,26 @@
+@charset "UTf-8";
+
+header, header > nav {
+    flex-flow: column nowrap;
+}
+
+header > h1 {
+    flex-basis: 40px;
+}
+
+#burger {
+    background-color: white;
+    color: #3A40E0;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+}
+
+#itens {
+    display: none;
+}
+
+header > nav > a {
+    width: 90vw;
+}
