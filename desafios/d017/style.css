@@ -1,18 +1,24 @@
-body > div > div {
-    color: white;
-    font-size: 1.3em;
-    text-align: center;
-    padding-top: 10px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
+    height: 100vh;
+    width: 100vw;
     display: grid;
-    grid-template: 90px 50px 1fr 50px / 2fr 1fr;
+    grid-template: 80px 40px 1fr 40px / 1fr 170px;
     gap: 5px;
-    height: 90vh;
 }
 
-.topo {
+.caixa {
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#topo {
     background-color: blueviolet;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -21,7 +27,7 @@ body > div > div {
 
 }
 
-.menu {
+#menu {
     background-color: cornflowerblue;
     grid-row-start: 2;
     grid-row-end: 3;
@@ -29,7 +35,7 @@ body > div > div {
     grid-column-end: -1;
 }
 
-.principal {
+#principal {
     background-color: crimson;
     grid-row-start: 3;
     grid-row-end: -2;
@@ -37,15 +43,15 @@ body > div > div {
     grid-column-end: -2;
 }
 
-.secundario {
+#secundario {
     background-color: darkorange;
     grid-row-start: 3;
-    grid-row-end: -1;
+    grid-row-end: -2;
     grid-column-start: 2;
     grid-column-end: -1;
 }
 
-.rodape {
+#rodape {
     background-color: green;
     grid-row-start: 4;
     grid-row-end: -1;
