@@ -1,0 +1,54 @@
+body > div > div {
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template: 90px 50px 1fr 50px / 1fr 2fr 1fr;
+    gap: 5px;
+    height: 90vh;
+}
+
+.topo {
+    background-color: blueviolet;
+    grid-row-start: 1;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+
+}
+
+.menu {
+    background-color: cornflowerblue;
+    grid-row-start: 2;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+}
+
+.principal {
+    background-color: crimson;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+.secundario {
+    background-color: darkorange;
+    grid-row-start: 3;
+    grid-row-end: span 1;
+    grid-column-start: 3;
+    grid-column-end: span 1;
+}
+
+.rodape {
+    background-color: green;
+    grid-row-start: 4;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+}
